@@ -12,19 +12,25 @@
 </head>
 <body>
 
-  <!-- VIDEO FUNDO -->
+  <!-- FUNDO MUSICAL ESTILO DA SUA FOTO - ANIMADO -->
   <div class="video-fundo">
-    <video autoplay muted loop playsinline id="bgVideo">
-      <source src="video02.mp4" type="video/mp4">
-    </video>
+    <img src="video/imagen1.webp" class="fundo-img" alt="Fundo musical">
+    <div class="ondas-luz"></div>
+    <div class="luzes-piscando"></div>
     <div class="overlay"></div>
-    <div class="background-musical">
-      <span class="nota n1">✨</span>
-      <span class="nota n2">🎶</span>
-      <span class="nota n3">🎤</span>
-      <span class="nota n4">🎵</span>
-      <span class="nota n5">🌸</span>
-      <span class="nota n6">💖</span>
+    
+    <!-- NOTAS VOANDO IGUAL SUA IMAGEM -->
+    <div class="notas-voadoras">
+      <span class="nota n1">𝄞</span>
+      <span class="nota n2">♪</span>
+      <span class="nota n3">♫</span>
+      <span class="nota n4">𝄢</span>
+      <span class="nota n5">♩</span>
+      <span class="nota n6">♬</span>
+      <span class="nota n7">𝄞</span>
+      <span class="nota n8">♫</span>
+      <span class="nota n9">♪</span>
+      <span class="nota n10">𝄢</span>
     </div>
   </div>
 
@@ -32,7 +38,7 @@
     <i class="fab fa-instagram"></i>
   </a>
 
-  <header class="header">
+  <header class="header" id="header">
     <nav class="nav">
       <h1 class="logo">Gisele Oliver</h1>
       <ul class="menu">
@@ -58,13 +64,12 @@
       <h2>Tour 2026</h2>
       <div class="datas">
         <div class="data-card"><strong>15 NOV</strong> - São Paulo, SP</div>
-        <div class="data-card"><strong>22 NOV</strong> - francisco morato</div>
+        <div class="data-card"><strong>22 NOV</strong> - Francisco Morato</div>
         <div class="data-card"><strong>05 DEZ</strong> - Cajamar, SP</div>
       </div>
     </div>
   </section>
 
-  <!-- YOUTUBE 4 VIDEOS -->
   <section id="youtube" class="youtube-section">
     <div class="container">
       <h2>Vídeos Oficiais</h2>
@@ -95,16 +100,15 @@
     <div class="container">
       <h2>Contrate para seu evento</h2>
       <form id="formContato" class="form">
-        <input type="text" placeholder="Seu nome" required>
-        <input type="text" placeholder="WhatsApp" required>
-        <textarea placeholder="Fale sobre o evento" required></textarea>
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="text" id="zap" placeholder="WhatsApp" required>
+        <textarea id="evento" placeholder="Fale sobre o evento" required></textarea>
         <button type="submit" class="btn-glow">Enviar no WhatsApp</button>
       </form>
     </div>
   </section>
 
   <footer>© 2026 Gisele Oliver. Todos os direitos reservados.</footer>
-
   <script src="script.js"></script>
 </body>
 </html>
